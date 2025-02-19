@@ -1,1 +1,350 @@
 /* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    width: 1100px;
+    height: 293px;
+}
+
+.header-menu {
+    display: flex;
+    box-sizing: border-box; 
+    width: 391px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 42px;
+    font-size: 18px;
+    gap: 30px;
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+    list-style-type: none;
+}
+
+.header-menu-list-underline {
+    border-bottom: 1px solid;
+    margin-right: 7px;
+    text-wrap: nowrap;
+}
+
+.header-logo-black {
+    display: block;
+    width: 136px;
+    height: 107px;
+    margin: 0 auto;
+}
+
+.header-adress {
+    font-style: normal;
+    justify-self: center;
+    max-width: 240px;
+    height: 98px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.adress-height {
+    line-height: 1.3;
+}
+
+.underline {
+    line-height: 24px;
+}
+
+.cover {
+    display: block;
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1100px;
+    height: 757px;
+}
+
+.overlay {
+    inset: 0;
+    position: absolute;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cover-title {
+    font-size: 100px;
+    line-height: 115px;
+    color: #FFFFFF;
+    letter-spacing: 30px;
+    padding: 165px 50px 0px 50px;
+}
+
+.cover-title-top-left {
+    display: block;
+    position: relative;
+    width: 286px;
+    height: 115px;
+    z-index: 2;
+}
+
+.cover-title-center {
+    display: block;
+    position: relative;
+    width: 339px;
+    height: 115px;
+    margin-top: 20px;
+    margin-left: 330px;
+    z-index: 2;
+}
+
+.cover-title-bottom-right { 
+    display: block;
+    position: relative;
+    width: 387px;
+    height: 115px;
+    margin-top: 20px;
+    margin-left: 613px;
+    z-index: 2;
+}
+
+.description {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 22px;
+    padding-top: 106px;
+    align-items: center;
+}
+
+.description-text {
+    padding-bottom: 55px;
+    padding-left: 50px;
+    word-spacing: 19px;
+    padding-right: 107px;
+    z-index: 2;
+}
+
+.description-button {
+    margin-bottom: 61px;
+    color: #FFFFFF;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    width: 256px;
+    height: 51px;
+    z-index: 2;
+}
+
+.lots {
+    padding: 180px 24px 120px;
+}
+
+.lots-head-title {
+    font-size: 40px;
+    margin-left: 40px;
+    margin-bottom: 27px;
+}
+
+.lots-list {
+    display: grid;
+    color: #FFFFFF;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    min-height: 596px;
+    list-style-type: none;
+    align-items: stretch;
+}
+
+.card-link {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 48px 40px;
+    height: 100%; 
+}
+
+.card-film {
+    position: relative;
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-book {
+    position: relative;
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-picture {
+    position: relative;
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lots-head {
+    position: relative;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.lots-card-text {
+    margin-top: auto;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.lots-more-info {
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.about-logo-white {
+    display: flex;
+    position: relative;
+    top: 35px;
+    left: 49px;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.about-logo-white img {
+    width: 148px; 
+    height: 114px; 
+    margin: 64px 45px 62px 46px;
+}
+
+.about-header {
+    font-size: 40px;
+    margin-top: 136px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.about-text {
+    font-size: 20px;
+    margin-left: 52px;
+}
+
+.about-first-text {
+    margin-bottom: 24px;
+}
+
+.about-second-text {
+    width: 693px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding-bottom: 82px;
+    padding-top: 180px;
+    gap: 20px; 
+}
+
+.footer-adress {
+    font-style: normal;
+    width: 264px;
+    height: 98px;
+    font-size: 18px; 
+    margin: 0 134px 82px 50px; 
+}
+
+.footer-menu {
+    font-size: 18px;
+    width: 163px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    list-style: none;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.footer-menu-list-underline {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    height: 48px;
+    gap: 48px;
+    margin: 0 50px 131px auto;
+}
+
+.social-media img {
+    width: 48px;
+    height: 48px;
+}
+
+/* ещё сделал с флексами, дял себя
+    
+/* 
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 180px;
+}
+
+.footer-adress {
+    font-style: normal;
+    justify-self: center;
+    max-width: 264px;
+    height: 98px;
+    font-size: 18px;
+    margin: 0 154px 82px 50px;
+}
+
+.footer-menu {
+    margin-left: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    list-style: none;
+    align-items: center;
+}
+
+.footer-menu-list-underline {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    margin: 0 50px 131px auto;
+    width: 240px;
+    height: 48px;
+    gap: 48px;
+}
+
+.social-media img {
+    width: 48px;
+    height: 48px;
+}
+
+*/
