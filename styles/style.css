@@ -9,7 +9,7 @@
 
 .header-menu {
     display: flex;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     width: 391px;
     margin-bottom: 5px;
     margin-left: 50px;
@@ -98,7 +98,7 @@
     z-index: 2;
 }
 
-.cover-title-bottom-right { 
+.cover-title-bottom-right {
     display: block;
     position: relative;
     width: 387px;
@@ -165,7 +165,7 @@
     position: relative;
     flex-direction: column;
     padding: 48px 40px;
-    height: 100%; 
+    height: 100%;
 }
 
 .card-film {
@@ -232,8 +232,8 @@
 }
 
 .about-logo-white img {
-    width: 148px; 
-    height: 114px; 
+    width: 148px;
+    height: 114px;
     margin: 64px 45px 62px 46px;
 }
 
@@ -259,18 +259,18 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 82px;
     padding-top: 180px;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .footer-adress {
     font-style: normal;
     width: 264px;
     height: 98px;
-    font-size: 18px; 
-    margin: 0 134px 82px 50px; 
+    font-size: 18px;
+    margin: 0 134px 82px 50px;
 }
 
 .footer-menu {
@@ -278,7 +278,7 @@
     width: 163px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     list-style: none;
     align-items: center;
     margin-top: 1px;
