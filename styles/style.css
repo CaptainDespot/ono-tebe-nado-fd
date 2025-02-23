@@ -4,7 +4,12 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     width: 1100px;
-    height: 293px;
+    padding: 95px 0 93px;
+    /* height: 293px;*/
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .header-menu {
@@ -29,21 +34,27 @@
     text-wrap: nowrap;
 }
 
-.header-logo-black {
+.header-logo {
     display: block;
     width: 136px;
     height: 107px;
     margin: 0 auto;
 }
 
-.header-adress {
+.address {
     font-style: normal;
-    justify-self: center;
-    max-width: 240px;
-    height: 98px;
     font-size: 18px;
+}
+
+.header-address {
+    /* font-style: normal;*/
+    justify-self: center;
+    height: 98px;
+    /* font-size: 18px;*/
     margin-left: auto;
-    margin-right: 50px;
+    padding: 0 50px 0 190px;
+    /*margin-right: 50px;
+    max-width: 240px; */
 }
 
 .adress-height {
@@ -55,20 +66,21 @@
 }
 
 .cover {
+    text-decoration: none;
     display: block;
     position: relative;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
 }
 
 .overlay {
     inset: 0;
     position: absolute;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -83,16 +95,16 @@
 .cover-title-top-left {
     display: block;
     position: relative;
-    width: 286px;
-    height: 115px;
+    /* width: 286px;
+    height: 115px;*/
     z-index: 2;
 }
 
 .cover-title-center {
     display: block;
     position: relative;
-    width: 339px;
-    height: 115px;
+    /* width: 339px;
+    height: 115px; */
     margin-top: 20px;
     margin-left: 330px;
     z-index: 2;
@@ -101,8 +113,8 @@
 .cover-title-bottom-right {
     display: block;
     position: relative;
-    width: 387px;
-    height: 115px;
+    /* width: 387px;
+    height: 115px; */
     margin-top: 20px;
     margin-left: 613px;
     z-index: 2;
@@ -117,19 +129,19 @@
 }
 
 .description-text {
-    padding-bottom: 55px;
+    margin-bottom: 50px;
     padding-left: 50px;
-    word-spacing: 19px;
-    padding-right: 107px;
+    word-spacing: 18px;
+    padding-right: 110px;
     z-index: 2;
 }
 
 .description-button {
-    margin-bottom: 61px;
+    margin-bottom: 50px;
     color: #FFFFFF;
     align-items: center;
     background-color: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid currentColor;
     width: 256px;
     height: 51px;
     z-index: 2;
@@ -150,7 +162,6 @@
     color: #FFFFFF;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
-    min-height: 596px;
     list-style-type: none;
     align-items: stretch;
 }
@@ -165,28 +176,31 @@
     position: relative;
     flex-direction: column;
     padding: 48px 40px;
-    height: 100%;
+    height: 596px;
+    background-size: cover;
+    background-position: center;
+    /*height: 100%;*/
 }
 
 .card-film {
-    position: relative;
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
+   /* background-size: cover;
+    position: relative;
+    background-position: center;*/
 }
 
 .card-book {
-    position: relative;
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    position: relative;
+    background-position: center;*/
 }
 
 .card-picture {
-    position: relative;
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
+    /*background-size: cover;
+    position: relative;
+    background-position: center;*/
 }
 
 .lots-head {
@@ -213,16 +227,16 @@
 .about {
     display: flex;
     flex-direction: row;
-    gap: 72px;
+    gap: 23px;
     padding-left: 24px;
     padding-right: 24px;
 }
 
-.about-logo-white {
+.about-logo {
     display: flex;
     position: relative;
-    top: 35px;
-    left: 49px;
+    margin-top: 34px;
+    margin-left: 47px;
     width: 240px;
     height: 240px;
     justify-content: center;
@@ -231,7 +245,7 @@
     background-color: #000000;
 }
 
-.about-logo-white img {
+.about-logo img {
     width: 148px;
     height: 114px;
     margin: 64px 45px 62px 46px;
@@ -249,12 +263,8 @@
     margin-left: 52px;
 }
 
-.about-first-text {
-    margin-bottom: 24px;
-}
-
-.about-second-text {
-    width: 693px;
+.about-text:last-child {
+    margin-top: 24px;
 }
 
 .footer {
@@ -265,13 +275,13 @@
     gap: 20px;
 }
 
-.footer-adress {
-    font-style: normal;
+.footer-address {
+    /* font-style: normal;*/
     width: 264px;
-    height: 98px;
-    font-size: 18px;
+    /*height: 98px;*/
+    /* font-size: 18px;*/
     margin: 0 134px 82px 50px;
-}
+} 
 
 .footer-menu {
     font-size: 18px;
